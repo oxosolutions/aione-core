@@ -8,10 +8,10 @@ class OxoSC_OxoText {
 	 */
 	public function __construct() {
 
-		add_shortcode('text', array( $this, 'render' ) );
+		add_shortcode('aione_text', array( $this, 'render' ) );
 
-		add_filter( 'oxo_text_content', 'shortcode_unautop' );
-		add_filter( 'oxo_text_content', 'do_shortcode' );
+		add_filter( 'aione_text_content', 'shortcode_unautop' );
+		add_filter( 'aione_text_content', 'do_shortcode' );
 	}
 
 	/**
@@ -21,7 +21,7 @@ class OxoSC_OxoText {
 	 * @return string		  HTML output
 	 */
 	function render( $args, $content = '') {
-		return apply_filters( 'oxo_text_content', wpautop( $content, false ) );
+		return apply_filters( 'aione_text_content', wpautop( $content, false ) );
 	}
 
 }

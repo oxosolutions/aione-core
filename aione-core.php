@@ -3,7 +3,7 @@
 Plugin Name: Aione Core
 Plugin URI: http://oxosolutions.com
 Description: Aione Core Plugin for Aione Themes
-Version: 1.8.4
+Version: 1.8.5
 Author: OXO Solutions
 Author URI: http://oxosolutions.com
 GitHub Plugin URI: https://github.com/oxosolutions/aione-core
@@ -975,7 +975,7 @@ function oxo_add_quicktags_button() {
 * Remove extra P tags
 *----------------------------------------------------------------------------*/
 function aione_shortcodes_formatter($content) {
-	$block = join("|",array("rev_slider", "youtube", "form", "aionegallery", "vimeo", "soundcloud", "button", "dropcap", "highlight", "checklist", "li_item", "tabs", "tab", "accordian", "toggle", "one_full", "one_half", "one_third", "one_fourth", "two_third", "three_fourth", "one_fifth", "two_fifth", "three_fifth", "four_fifth", "one_sixth", "five_sixth", "tagline_box", "pricing_table", "pricing_column", "pricing_price", "pricing_row", "pricing_footer", "content_boxes", "content_box", "slider", "slide", "testimonials", "testimonial", "progress", "person", "recent_posts", "recent_works", "alert", "fontawesome", "social_links", "clients", "client", "title", "separator", "tooltip", "fullwidth", "map", "counters_circle", "counter_circle", "counters_box", "counter_box", "flexslider", "blog", "imageframe", "images", "image", "sharing", "featured_products_slider", "products_slider", "menu_anchor", 'flip_boxes', 'flip_box', 'text', 'oxo_text', 'oxo_lightbox', 'oxo_code', 'modal', 'modal_text_link', 'postslider'));
+	$block = join("|",array("rev_slider", "youtube", "form", "aionegallery", "vimeo", "soundcloud", "button", "dropcap", "highlight", "checklist", "li_item", "tabs", "tab", "accordian", "toggle", "one_full", "one_half", "one_third", "one_fourth", "two_third", "three_fourth", "one_fifth", "two_fifth", "three_fifth", "four_fifth", "one_sixth", "five_sixth", "tagline_box", "pricing_table", "pricing_column", "pricing_price", "pricing_row", "pricing_footer", "content_boxes", "content_box", "slider", "slide", "testimonials", "testimonial", "progress", "person", "recent_posts", "recent_works", "alert", "fontawesome", "social_links", "clients", "client", "title", "separator", "tooltip", "fullwidth", "map", "counters_circle", "counter_circle", "counters_box", "counter_box", "flexslider", "blog", "imageframe", "images", "image", "sharing", "featured_products_slider", "products_slider", "menu_anchor", 'flip_boxes', 'flip_box', 'aione_text', 'oxo_lightbox', 'oxo_code', 'modal', 'modal_text_link', 'postslider'));
 
 	// opening tag
 	$rep = preg_replace("/(<p>)?\[($block)(\s[^\]]+)?\](<\/p>|<br \/>)?/","[$2$3]",$content);

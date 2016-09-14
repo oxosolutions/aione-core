@@ -14,7 +14,7 @@
 			// Add name of the class to deserialize it again when the element is sent back to the server from the web page
 			$this->config['php_class'] 		= get_class($this);
 			// element id
-			$this->config['id']	   		= 'oxo_text';
+			$this->config['id']	   		= 'aione_text';
 			// element name
 			$this->config['name']	 		= __('Text Block', 'oxo-core');
 			// element icon

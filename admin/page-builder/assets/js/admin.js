@@ -401,7 +401,7 @@ var instance;
 
 			var type 		= $( '#oxo_table_type' ).val();
 			var columns 	= $( '#oxo_table_columns' ).val();
-			var text 		= '[text]<div class="table-' + type + '"><table width="100%"><thead><tr>';
+			var text 		= '[aione_text]<div class="table-' + type + '"><table width="100%"><thead><tr>';
 
 			for( var i = 0; i < columns; i++ ) {
 				text += '<th align="left">Column ' + (i + 1) + '</th>';
@@ -447,7 +447,7 @@ var instance;
 				text += '<td><strong>Tax</strong></td>';
 			}
 			text += '</tr>';
-			text += '</tbody></table></div>[/text]';
+			text += '</tbody></table></div>[/aione_text]';
 			//update content in wp editor
 			tinyMCE.activeEditor.setContent( text );
 
@@ -613,7 +613,7 @@ var instance;
 			var cssClass			= $( '#oxo_pricing_table_class' ).val();
 			var cssID				= $( '#oxo_pricing_table_id' ).val();
 
-			var text 				=  ' [text][pricing_table type="'+type+'" ';
+			var text 				=  ' [aione_text][pricing_table type="'+type+'" ';
 				text				+= ' backgroundcolor="'+backgroundColor+'" ';
 				text				+= ' bordercolor="'+borderColor+'" ';
 				text				+= ' dividercolor="'+dividerColor+'"';
@@ -625,7 +625,7 @@ var instance;
 				} else {
 					text				+= columns;
 				}
-				text				+= '[/pricing_table][/text]';
+				text				+= '[/pricing_table][/aione_text]';
 
 			//update content for wp editor
 			tinyMCE.activeEditor.setContent( text );

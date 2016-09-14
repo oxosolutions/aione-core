@@ -118,7 +118,7 @@
 				//TODO:: add table shortocode
 				'tagline_box'              => 'tagline_box',
 				'testimonials'             => 'testimonials',
-				'text'              => 'text',
+				'aione_text'              => 'aione_text',
 				'title'                    => 'title',
 				'form'                  => 'form',
 				'aionegallery'                  => 'aionegallery',
@@ -1812,7 +1812,7 @@
 
 						return array( 'id' => $youtube->config['id'] );
 						break;
-					case 'text':
+					case 'aione_text':
 						$text_block                                    = new TF_OxoText();
 						$text_block->config['index']                   = $index;
 						$text_block->config['id']                      = Oxo_Core_Reversal::GUID();
@@ -5870,8 +5870,8 @@
 						$buffer .= trim( Oxo_Core_Reversal::$prepared_builder_blocks[ $matches[1][0] ][0] );
 					} else {
 						if ( strlen( trim( $matched_content ) ) > 1 ) {
-							if ( ! Oxo_Core_Reversal::has_shortcode( $matched_content, 'text' ) ) {
-								$buffer .= '[text]' . trim( $matched_content ) . '[/text]';
+							if ( ! Oxo_Core_Reversal::has_shortcode( $matched_content, 'aione_text' ) ) {
+								$buffer .= '[aione_text]' . trim( $matched_content ) . '[/aione_text]';
 							}
 						}
 					}
