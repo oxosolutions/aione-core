@@ -1834,7 +1834,7 @@
 	**/
 	oxoParser.buildTextBlockShortocde = function( args ) {
 
-		shortcodeData = '[text]'+args[0].value+'[/text]';
+		shortcodeData = '[aione_text]'+args[0].value+'[/aione_text]';
 		return shortcodeData;
 	}
 	/**

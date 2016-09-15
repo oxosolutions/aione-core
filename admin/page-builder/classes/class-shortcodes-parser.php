@@ -1712,9 +1712,9 @@ if( ! class_exists( 'Oxo_Core_Shortcodes_Parser' ) ) {
 		 **/
 		private static function build_text_block_shortocde ( $args ) {
 		
-			$shortcode_data = ' [text]';
+			$shortcode_data = ' [aione_text]';
 			$shortcode_data.= $args[0]['value'];
-			$shortcode_data = ' [/text]';
+			$shortcode_data = ' [/aione_text]';
 			
 			return $shortcode_data;
 		}

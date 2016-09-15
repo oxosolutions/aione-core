@@ -105,9 +105,9 @@
 					  "desc" 			=> __('Pricing Table short code content', 'oxo-core'),
 					  "id" 				=> "oxo_pricing_table_content",
 					  "type" 			=> ElementTypeEnum::HTML_EDITOR,
-					  "value" 			=> '[text][pricing_table type="1" backgroundcolor="" bordercolor="" dividercolor="" class="" id=""]<br />
+					  "value" 			=> '[aione_text][pricing_table type="1" backgroundcolor="" bordercolor="" dividercolor="" class="" id=""]<br />
 [pricing_column title="Standard"][pricing_price currency="$" price="15.55" time="monthly"][/pricing_price][pricing_row]Feature 1[/pricing_row][pricing_footer]Signup[/pricing_footer][/pricing_column]<br />
-[/pricing_table][/text]'),
+[/pricing_table][/aione_text]'),
 
 				);
 		}
