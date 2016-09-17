@@ -3,7 +3,7 @@
 Plugin Name: Aione Core
 Plugin URI: http://oxosolutions.com
 Description: Aione Core Plugin for Aione Themes
-Version: 1.8.7.2
+Version: 1.8.7.3
 Author: OXO Solutions
 Author URI: http://oxosolutions.com
 GitHub Plugin URI: https://github.com/oxosolutions/aione-core
